@@ -29,8 +29,12 @@
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.1</version>  <!-- Update this to a newer version -->
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version> <!-- or use the latest version of the plugin -->
+            <configuration>
+                <source>1.7</source>  <!-- Use at least Java 7 -->
+                <target>1.7</target>  <!-- Use at least Java 7 -->
+            </configuration>
         </plugin>
     </plugins>
 </build>
